@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file customedockerfile --tag docker-images:latest
+      run: docker build . --file customedockerfile --tag jalen1123/docker-images:latest
 
     - name: log in to docker hub
       uses: docker/login-action@v1
