@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file customdockerfile --tag docker-practice:$(date +%s)
+      run: docker build . --file customedockerfile --tag docker-practice:$(date +%s)
