@@ -1,0 +1,5 @@
+FROM centos:7
+RUN yum -y install httpd
+EXPOSE 80
+RUN echo "this is my second docker" >> /var/www/html/index.html
+CMD [ "httpd","-D","FOREGROUND" ]
